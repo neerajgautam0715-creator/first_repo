@@ -6,6 +6,10 @@ app.get("/",(req,res)=>{
     res.send("backend route is running");
 })
 
+app.get("/about", (req,res)=>{
+    res.send("backend /about route is running");
+})
+
 app.listen(port,(req,res)=>{
     console.log(`server is running on ${port}`);
 });
